@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_background">
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/title"
+        style="@style/titleStyle"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:text="@string/add_sns"
+        style="@style/button_Bottom_Next"
+        android:layout_alignParentBottom="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_title"
+        android:layout_above="@id/btn_next">
+        <LinearLayout
+            android:id="@+id/ll_sns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+</RelativeLayout>
+

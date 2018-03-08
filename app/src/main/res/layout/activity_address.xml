@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_background">
+    <include layout="@layout/title" style="@style/titleStyle"/>
+
+    <RelativeLayout style="@style/item_layout_style">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_country"
+            style="@style/item_TextView_Left"
+            android:text="@string/tv_country"/>
+        <TextView
+            android:layout_toRightOf="@id/tv_country"
+            style="@style/tv_spinner_style"
+            android:id="@+id/sp_country"/>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/item_layout_style">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_area"
+            style="@style/item_TextView_Left"
+            android:text="@string/tv_area"/>
+        <TextView
+            android:layout_toRightOf="@id/tv_area"
+            style="@style/tv_spinner_style"
+            android:id="@+id/sp_area"/>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/item_layout_style">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_city"
+            style="@style/item_TextView_Left"
+            android:text="@string/tv_city"/>
+        <TextView
+            android:layout_toRightOf="@id/tv_city"
+            style="@style/tv_spinner_style"
+            android:id="@+id/sp_city"/>
+    </RelativeLayout>
+
+    <LinearLayout style="@style/item_layout_style" android:orientation="vertical" android:paddingBottom="@dimen/item_margin_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/item_TextView_Left"
+            android:text="@string/tv_address"/>
+        <EditText
+            style="@style/InputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_address"
+            android:gravity="left"
+            android:singleLine="false"
+            android:hint="@string/register_input_hint"
+            android:lines="3"/>
+    </LinearLayout>
+
+</LinearLayout>

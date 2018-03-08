@@ -1,0 +1,205 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 页面背景样式 -->
+    <style name="pageBackgroundStyle">
+        <item name="android:background">@color/white_background</item>
+    </style>
+
+    <style name="titleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <!-- 定义EditText样式 -->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!-- 注册页进度条图片样式 -->
+    <style name="register_step_style">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="InputStyle">
+        <!-- 底部线 默认颜色 -->
+        <item name="colorControlNormal">@null</item>
+        <!-- 底部线 EditText激活时颜色 -->
+        <item name="colorControlActivated">@null</item>
+        <!-- 设置背景 -->
+        <item name="android:background">@null</item>
+        <!-- 设置光标 -->
+        <item name="android:gravity">right</item>
+        <!-- 限制单行 -->
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!-- 定义Button样式 -->
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+
+    <!-- 登录页"欢迎使用客户管理系统"字体样式 -->
+    <style name="WelcomeFontStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/Welcome_title_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!-- 登录页登录反馈信息字体样式 -->
+    <style name="loginMessageFontStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <!-- 右侧勾选图片样式 -->
+    <style name="imageView_RightV">
+        <item name="android:layout_width">21dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_marginRight">@dimen/page_left_right_margin</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- Item项中，左侧TextView样式 -->
+    <style name="item_TextView_Left">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/page_left_right_margin</item>
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:layout_marginBottom">13dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Item项中，左侧TextView样式 -->
+    <style name="item_TextView" parent="item_TextView_Left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 右侧TextView作为Spinner选择时的样式 -->
+    <style name="tv_spinner_style" parent="item_TextView_Left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:drawableRight">@drawable/arrow_front</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+        <item name="android:hint">@string/select_please</item>
+    </style>
+
+    <!-- "下一步"按钮 -->
+    <style name="button_Next_Violet">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/button_next_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_next_style</item>
+    </style>
+
+    <!-- 页面最底端"下一步"按钮样式 -->
+    <style name="button_Bottom_Next" parent="button_Next_Violet"></style>
+
+    <!-- 注册页，线性布局样式 -->
+    <style name="pageLinearLayout">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 注册页item项外，线性布局样式 -->
+    <style name="registerPageLinearLayout" parent="pageLinearLayout">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">@dimen/page_left_right_margin</item>
+        <item name="android:layout_marginRight">@dimen/page_left_right_margin</item>
+    </style>
+
+
+    <!-- 注册页中具体item条布局的样式 与上一条有宽间距 -->
+    <style name="item_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/item_margin_top</item>
+        <item name="android:paddingLeft">@dimen/page_left_right_margin</item>
+        <item name="android:paddingRight">@dimen/page_left_right_margin</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!-- 对话框样式 -->
+    <style name="Theme.Light.NoTitle.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="Theme.Light.NoTitle.NoShadow.Dialog" parent="Theme.Light.NoTitle.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Animation.Bottom.Rising" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+
+    <style name="ContactsActionBarTheme" parent="@android:style/Theme.Holo">
+        <item name="android:textColorHint">#CCCCCC</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.PopupMenu</item>
+    </style>
+
+    <style name="PeopleTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@color/white_background</item>
+        <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item>
+    </style>
+
+
+    <!-- 首页tabbar样式 -->
+    <style name="tabbar_item_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/tab_radio_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background">
+    <include layout="@layout/title" style="@style/titleStyle"/>
+        <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@color/white_background"/>
+
+        <RadioGroup
+            android:id="@+id/tabs_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingBottom="3dp">
+            <RadioButton
+                style="@style/tabbar_item_style"
+                android:id="@+id/tab_rb_a"
+                android:drawableTop="@drawable/tab_radio_home"
+                android:text="@string/home"
+                android:checked="true"/>
+            <RadioButton
+                style="@style/tabbar_item_style"
+                android:id="@+id/tab_rb_b"
+                android:drawableTop="@drawable/tab_radio_credit"
+                android:text="@string/credit"/>
+            <RadioButton
+                style="@style/tabbar_item_style"
+                android:id="@+id/tab_rb_c"
+                android:drawableTop="@drawable/tab_radio_subordinate"
+                android:text="@string/subordinate"/>
+            <RadioButton
+                style="@style/tabbar_item_style"
+                android:id="@+id/tab_rb_d"
+                android:drawableTop="@drawable/tab_radio_bill"
+                android:text="@string/bill"/>
+        </RadioGroup>
+</LinearLayout>
+

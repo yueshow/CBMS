@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="3dip"
+        android:orientation="horizontal" >
+
+        <View
+            android:background="@drawable/step1"
+            android:id="@+id/dot_0"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"/>
+
+        <View
+            android:background="@drawable/step2"
+            android:id="@+id/dot_1"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"/>
+
+        <View
+            android:background="@drawable/step3"
+            android:id="@+id/dot_2"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"/>
+        <View
+            android:background="@drawable/step4"
+            android:id="@+id/dot_3"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_experience"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        style="@style/button_Bottom_Next"
+        android:text="@string/experience"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/btn_skip"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_skip"
+        android:gravity="center"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_next_size" />
+
+</RelativeLayout>

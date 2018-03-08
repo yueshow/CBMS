@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/pageBackgroundStyle"
+    tools:context="com.awesome.consumer.cbms.ui.activity.loginandregister.LoginActivity">
+
+    <Button
+        android:id="@+id/btn_next"
+        android:text="@string/next"
+        style="@style/button_Bottom_Next"
+        android:layout_alignParentBottom="true"/>
+    <include layout="@layout/title"
+        android:id="@+id/title"
+        style="@style/titleStyle"/>
+    <ImageView
+        android:id="@+id/step"
+        style="@style/register_step_style"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register_step1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_next"
+        android:layout_below="@id/step">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/pageLinearLayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                style="@style/item_TextView"
+                android:id="@+id/tv_language"
+                android:layout_alignParentLeft="true"
+                android:text="@string/language"/>
+            <Spinner
+                android:id="@+id/spn_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_certificates_type"/>
+        </RelativeLayout>
+        <include layout="@layout/line_big"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                style="@style/item_TextView"
+                android:id="@+id/tv_admin_account"
+                android:layout_alignParentLeft="true"
+                android:text="@string/admin_account"/>
+            <EditText
+                style="@style/InputStyle"
+                android:id="@+id/et_admin_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_certificates_name"
+                android:hint="@string/register_input_hint"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                style="@style/item_TextView"
+                android:id="@+id/tv_login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/login_password"/>
+            <EditText
+                style="@style/InputStyle"
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_login_password"
+                android:hint="@string/register_input_hint"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                style="@style/item_TextView"
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/login_phone"/>
+            <EditText
+                style="@style/InputStyle"
+                android:id="@+id/et_witness1_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_phone"
+                android:hint="@string/register_input_hint2"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line_big"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                style="@style/item_TextView"
+                android:id="@+id/tv_parent_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/login_parent_account"/>
+            <EditText
+                style="@style/InputStyle"
+                android:id="@+id/et_parent_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_parent_account"
+                android:hint="@string/register_input_hint2"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                style="@style/item_TextView"
+                android:id="@+id/tv_parent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/login_parent_name"/>
+            <EditText
+                style="@style/InputStyle"
+                android:id="@+id/et_parent_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_parent_name"
+                android:hint="@string/register_input_hint2"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_selected_bg">#C4E1E1</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- white -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_background">#f7f7f7</color>
+
+    <!-- black -->
+    <color name="black">#333333</color>
+
+    <!-- red -->
+    <color name="red">#CC0000</color>
+
+    <!-- blue -->
+    <color name="blue">#3e9de1</color>
+
+    <!-- yellow -->
+    <color name="yellow">#dddf52</color>
+
+    <!-- violet 紫色 但 图片上肉眼看到为紫色，实际给出的值与blue颜色一致 -->
+    <color name="violet">#3e9de1</color>
+
+    <color name="grey">#666666</color>
+    <color name="grey1">#cccccc</color>
+
+</resources>

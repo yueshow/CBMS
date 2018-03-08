@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/pageBackgroundStyle"
+    tools:context="com.awesome.consumer.cbms.ui.activity.loginandregister.LoginActivity">
+
+    <Button
+        android:id="@+id/btn_next"
+        android:text="@string/submit"
+        style="@style/button_Bottom_Next"
+        android:layout_alignParentBottom="true"/>
+    <include layout="@layout/title"
+        android:id="@+id/title"
+        style="@style/titleStyle"/>
+    <ImageView
+        android:id="@+id/step"
+        style="@style/register_step_style"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register_step3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_next"
+        android:layout_below="@id/step"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/pageLinearLayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                android:id="@+id/tv_contact_name"
+                style="@style/item_TextView"
+                android:layout_alignParentLeft="true"
+                android:text="@string/register_contact"/>
+            <EditText
+                style="@style/InputStyle"
+                android:id="@+id/et_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_contact_name"
+                android:hint="@string/register_input_hint"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                android:id="@+id/tv_contact_ways"
+                style="@style/item_TextView"
+                android:layout_alignParentLeft="true"
+                android:text="@string/register_contact_type"/>
+            <TextView
+                style="@style/item_TextView"
+                android:gravity="right"
+                android:id="@+id/et_register_contact_ways"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_certificates_code"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableRight="@drawable/arrow_front"
+                android:hint="@string/register_input_hint"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/registerPageLinearLayout">
+            <TextView
+                android:id="@+id/tv_witness1_name"
+                style="@style/item_TextView"
+                android:layout_alignParentLeft="true"
+                android:text="@string/register_gender"/>
+            <TextView
+                style="@style/item_TextView"
+                android:gravity="right"
+                android:id="@+id/tv_register_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_witness1_name"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableRight="@drawable/arrow_front"
+                android:text="@string/select_please"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
